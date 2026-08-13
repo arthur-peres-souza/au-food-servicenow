@@ -1,109 +1,102 @@
 # 🐾 AU FOOD
 
-## Sistema de gerenciamento para loja de produtos para pets
+Aplicação de gerenciamento para uma loja fictícia de produtos para pets, desenvolvida no **ServiceNow App Engine Studio**.
 
-Projeto desenvolvido utilizando **ServiceNow App Engine Studio**, com o objetivo de aplicar na prática conceitos de desenvolvimento de aplicações, estruturação de dados, relacionamentos entre tabelas, controle de acesso e automação de processos.
+Criei este projeto durante meus estudos de ServiceNow para colocar em prática o que estava aprendendo e entender melhor como uma aplicação é estruturada dentro da plataforma.
 
-## 📌 Sobre o projeto
+## Sobre o projeto
 
-A **AU FOOD** é uma aplicação desenvolvida para auxiliar no gerenciamento de uma loja fictícia de produtos para pets.
+A AU FOOD foi desenvolvida para trabalhar com três áreas principais de uma loja:
 
-O sistema permite organizar informações relacionadas a **produtos, estoque e pedidos**, utilizando tabelas relacionadas e recursos da plataforma ServiceNow.
+- Produtos
+- Estoque
+- Pedidos
 
-O projeto foi desenvolvido durante minha formação em ServiceNow App Engine Studio, permitindo aplicar na prática os conhecimentos adquiridos ao longo dos estudos.
+Durante o desenvolvimento, criei as tabelas da aplicação, configurei seus campos e estabeleci referências entre elas para que as informações pudessem ser utilizadas em diferentes partes do sistema.
 
-## ⚙️ Funcionalidades
+Também trabalhei com importação de dados por Excel, controle de acesso, personalização de formulários e listas e automação de processos.
+
+## Principais funcionalidades
 
 - Cadastro e gerenciamento de produtos;
 - Controle de estoque;
-- Registro e gerenciamento de pedidos;
-- Importação de dados a partir de arquivos Excel;
-- Criação e configuração de tabelas e campos;
+- Registro de pedidos;
+- Importação de dados via Excel;
 - Relacionamentos e referências entre tabelas;
-- Utilização de registros de empresas e marcas existentes na plataforma;
-- Identificação automática dos produtos;
+- Imagens nos registros dos produtos;
+- Identificador automático;
 - Controle de produtos ativos e inativos;
-- Classificação de produtos por status;
-- Inclusão de imagens nos registros dos produtos;
+- Status dos produtos;
+- Categorias e subcategorias dependentes;
 - Personalização de listas e formulários.
 
-## 🗂️ Estrutura de dados
+## Estrutura dos dados
 
 A aplicação possui três tabelas principais:
 
-- **Produto**
-- **Estoque**
-- **Pedido**
+**Produto | Estoque | Pedido**
 
-Foram utilizados campos de referência para permitir o relacionamento entre informações das diferentes tabelas e também o aproveitamento de registros já existentes na plataforma ServiceNow.
+Uma das coisas que trabalhei no projeto foi o uso de referências entre tabelas. Por exemplo, informações cadastradas em Produto podem ser utilizadas em Estoque sem a necessidade de cadastrar os mesmos dados novamente.
 
-## 🏷️ Categorias e subcategorias
+Também utilizei registros já existentes no ServiceNow, como empresas e marcas, como referência dentro da aplicação.
 
-A aplicação utiliza campos dependentes para organizar os produtos.
+### Categorias e subcategorias
 
-Exemplos:
+Configurei o campo **Subcategoria** para depender da categoria selecionada.
 
-**Alimentos**
-- Alimentos para cachorro
-- Alimentos para gato
+Alguns exemplos:
 
-**Brinquedos**
-- Bolinhas
-- Bambolês
-- Pelúcia
+- **Alimentos:** alimentos para cachorro e alimentos para gato;
+- **Brinquedos:** bolinhas, bambolês e pelúcia;
+- **Acessórios:** higiene e roupas.
 
-**Acessórios**
-- Higiene
-- Roupas
+Assim, ao selecionar uma categoria, o usuário visualiza apenas as subcategorias correspondentes.
 
-Dessa forma, as opções disponíveis em **Subcategoria** são apresentadas de acordo com a **Categoria** selecionada.
+## Controle de acesso
 
-## 🔐 Controle de acesso
-
-Foram configuradas diferentes funções de usuário com permissões específicas dentro da aplicação:
+A AU FOOD possui diferentes funções de usuário:
 
 - **Vendedor (sales)**
 - **Usuário (user)**
 - **Administrador (admin)**
 - **Gestor (manager)**
 
-Cada função possui permissões específicas para operações como **criação, leitura, alteração e exclusão de registros**, de acordo com sua responsabilidade dentro da aplicação.
+Configurei permissões diferentes para cada função de acordo com o nível de acesso necessário dentro da aplicação.
 
-## 🔄 Automação de processos
+Essas permissões determinam quais usuários podem criar, visualizar, alterar ou excluir determinados registros.
 
-Foi desenvolvido um **Flow** denominado `Novo Pedido` para aplicar conceitos de automação de processos utilizando os recursos da plataforma ServiceNow.
+## Automação
 
-O desenvolvimento permitiu trabalhar com conceitos de execução automática de ações a partir de eventos ocorridos dentro da aplicação.
+Também criei o Flow **Novo Pedido**, trabalhando com automação de processos dentro do ServiceNow a partir de eventos da aplicação.
 
-## 🛠️ Tecnologias e recursos utilizados
+## Ferramentas e recursos utilizados
 
 - ServiceNow
 - App Engine Studio
 - Flow
-- Tabelas e formulários
+- Tabelas e campos
 - Campos de referência
-- Relacionamentos entre dados
 - Controle de acesso por funções
 - Importação de dados via Excel
 - Personalização de listas e formulários
 
-## 📸 Demonstração
+## Demonstração
 
-Nesta seção serão apresentadas imagens das principais funcionalidades e configurações desenvolvidas na aplicação AU FOOD.
+Abaixo estão algumas telas da aplicação e das configurações desenvolvidas durante o projeto.
 
-## 🎯 Aprendizados
+<!-- As imagens da AU FOOD serão adicionadas aqui -->
 
-O desenvolvimento da AU FOOD permitiu aplicar na prática conhecimentos relacionados a:
+## O que aprendi
 
-- Estruturação de aplicações;
-- Modelagem e organização de dados;
-- Relacionamentos entre tabelas;
-- Configuração de permissões;
-- Automação de processos;
-- Organização de interfaces;
-- Desenvolvimento de soluções utilizando ServiceNow App Engine Studio.
+A AU FOOD foi meu primeiro projeto prático utilizando o ServiceNow App Engine Studio.
+
+Atualmente estou no **2º semestre de Engenharia de Software**, e o desenvolvimento desse projeto me permitiu complementar os conhecimentos que venho adquirindo na faculdade com uma experiência prática de criação de aplicações.
+
+Durante o projeto, trabalhei com estruturação e relacionamento de dados, tabelas, referências, diferentes níveis de acesso, personalização de interfaces e automação de processos.
+
+A experiência também me ajudou a entender melhor como esses conceitos podem ser utilizados na construção de uma aplicação dentro de uma plataforma corporativa como o ServiceNow.
 
 ---
 
-**Projeto desenvolvido por Arthur Peres França Souza**  
-Estudante de Engenharia de Software
+**Arthur Peres França Souza**  
+Estudante de Engenharia de Software — 2º semestre
