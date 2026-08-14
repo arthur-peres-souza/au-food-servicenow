@@ -4,6 +4,8 @@ Aplicação de gerenciamento para uma loja fictícia de produtos para pets, dese
 
 Criei este projeto durante meus estudos de ServiceNow para colocar em prática o que estava aprendendo e entender melhor como uma aplicação é estruturada dentro da plataforma.
 
+> **Observação:** AU FOOD é o nome próprio da aplicação. Caso a tradução automática do navegador esteja ativada, o nome pode ser traduzido incorretamente como “Comida Australiana”.
+
 ## Sobre o projeto
 
 A AU FOOD foi desenvolvida para trabalhar com três áreas principais de uma loja:
