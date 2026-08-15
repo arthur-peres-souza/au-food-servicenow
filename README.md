@@ -16,7 +16,7 @@ A AU FOOD foi desenvolvida para trabalhar com três áreas principais de uma loj
 
 Durante o desenvolvimento, criei as tabelas da aplicação, configurei seus campos e estabeleci referências entre elas para que as informações pudessem ser utilizadas em diferentes partes do sistema.
 
-Também trabalhei com importação de dados por Excel, controle de acesso, personalização de formulários e listas e automação de processos.
+Também trabalhei com importação de dados via Excel, controle de acesso, personalização de formulários e listas e automação de processos.
 
 ## Principais funcionalidades
 
@@ -69,9 +69,9 @@ Essas permissões determinam quais usuários podem criar, visualizar, alterar ou
 
 ## Automação
 
-- Foi desenvolvido o fluxo **Novo Pedido** para automatizar o processo de aprovação dos pedidos. Quando um pedido é criado, o fluxo inicia uma solicitação de aprovação e verifica o resultado por meio de condições. 
-- Caso o pedido seja rejeitado, um e-mail é enviado automaticamente ao cliente informando a situação do pedido, e o fluxo é encerrado.
-- Caso seja aprovado, o registro do pedido é atualizado automaticamente antes do encerramento do fluxo.
+- Foi desenvolvido o fluxo **Novo Pedido** para automatizar o processo de aprovação dos pedidos.
+- Os pedidos são encaminhados aos gerentes responsáveis pela aprovação, que verificam a disponibilidade do produto em estoque.
+- Caso não haja estoque disponível, o pedido é rejeitado e um e-mail é enviado automaticamente ao cliente. Quando aprovado, o registro é atualizado e o pedido segue para os vendedores da aplicação, dando continuidade ao processo. 
 
 ## Ferramentas e recursos utilizados
 
@@ -90,31 +90,31 @@ Abaixo estão algumas telas da aplicação e das configurações desenvolvidas d
 
 ### Visão geral da aplicação
 
-A aplicação AU FOOD foi estruturada no ServiceNow App Engine Studio com as tabelas **Pedido**, **Estoque** e **Produto**.
+A **AU FOOD** foi estruturada no **ServiceNow App Engine Studio** a partir das tabelas **Produto**, **Estoque** e **Pedido**, que organizam as principais informações da aplicação. As tabelas foram configuradas com campos, referências e relacionamentos para permitir a integração dos dados utilizados no gerenciamento da loja.
 
 ![Visão geral da aplicação AU FOOD](images/visao-geral.png)
 
 ### Produtos cadastrados
 
-A tabela de produtos reúne informações como **nome, marca, categoria, subcategoria, status e disponibilidade**, permitindo organizar e gerenciar os produtos cadastrados na aplicação.
+A tabela **Produto** foi configurada para centralizar as informações dos itens cadastrados na aplicação, incluindo **identificador automático, nome, marca, categoria, subcategoria, imagem, status e controle de ativo/inativo**. Os registros também utilizam referências e campos configurados para facilitar a organização e o gerenciamento dos produtos.
 
 ![Produtos cadastrados no AU FOOD](images/produtos.png)
 
 ### Categorias e subcategorias dependentes
 
-O campo **Subcategoria** foi configurado para apresentar opções de acordo com a **Categoria** selecionada, criando uma relação de dependência entre os campos.
+Os campos **Categoria** e **Subcategoria** foram configurados de forma dependente. Ao selecionar uma categoria, a aplicação apresenta apenas as subcategorias correspondentes, como **Alimentos → alimentos para cachorro ou gato**, evitando a exibição de opções que não pertencem à categoria escolhida.
 
 ![Configuração de categoria e subcategoria](images/categoria-subcategoria.png)
 
 ### Automação do processo de pedidos
 
-O fluxo **Novo Pedido** inicia o processo de aprovação quando um pedido é criado. Em caso de rejeição, um e-mail é enviado ao cliente e o fluxo é encerrado. Quando aprovado, o registro do pedido é atualizado automaticamente antes do encerramento.
+O fluxo **Novo Pedido** inicia o processo de aprovação quando um pedido é criado, encaminhando-o aos gerentes responsáveis pela aprovação. Nessa etapa, é verificada a disponibilidade do produto em estoque. Caso **não haja estoque disponível**, o pedido é rejeitado e um e-mail é enviado automaticamente ao cliente informando a situação. Caso o pedido seja **aprovado**, o registro é atualizado automaticamente e segue para os vendedores da aplicação, dando continuidade ao processo.
 
 ![Fluxo automatizado de pedidos](images/fluxo-pedido.png)
 
 ### Perfis de acesso
 
-Foram configuradas diferentes funções de acesso à aplicação: **Vendedor (sales), Usuário (user), Administrador (admin) e Gestor (manager)**, permitindo controlar as permissões de acordo com o perfil de cada usuário.
+A AU FOOD possui quatro funções de acesso: **Vendedor (sales), Usuário (user), Administrador (admin) e Gestor (manager)**. Foram configuradas permissões específicas para cada perfil, controlando o acesso às tabelas e operações como **criação, visualização, alteração e exclusão de registros**, de acordo com a responsabilidade de cada usuário dentro da aplicação.
 
 ![Perfis de acesso do AU FOOD](images/perfis-acesso.png)
 
