@@ -90,31 +90,31 @@ Abaixo estão algumas telas da aplicação e das configurações desenvolvidas d
 
 A aplicação AU Food foi estruturada no ServiceNow App Engine Studio com as tabelas **Pedido**, **Estoque** e **Produto**.
 
-![Visão geral da aplicação AU Food](imagens/visao-geral.png)
+![Visão geral da aplicação AU Food](images/visao-geral.png)
 
 ### Produtos cadastrados
 
 A tabela de produtos reúne informações como **nome, marca, categoria, subcategoria, status e disponibilidade**, permitindo organizar e gerenciar os produtos cadastrados na aplicação.
 
-![Produtos cadastrados no AU Food](imagens/produtos.png)
+![Produtos cadastrados no AU Food](images/produtos.png)
 
 ### Categorias e subcategorias dependentes
 
 O campo **Subcategoria** foi configurado para apresentar opções de acordo com a **Categoria** selecionada, criando uma relação de dependência entre os campos.
 
-![Configuração de categoria e subcategoria](imagens/categorizar-subcategoria.png)
+![Configuração de categoria e subcategoria](images/categoria-subcategoria.png)
 
 ### Automação do processo de pedidos
 
 Foi desenvolvido o fluxo **Novo Pedido**, responsável por automatizar etapas do processo de pedidos, incluindo **solicitação de aprovação, condições para pedidos aprovados ou rejeitados, envio de e-mail, atualização do registro e encerramento do fluxo**.
 
-![Fluxo automatizado de pedidos](imagens/fluxo-pedido.png)
+![Fluxo automatizado de pedidos](images/fluxo-pedido.png)
 
 ### Perfis de acesso
 
 Foram configuradas diferentes funções de acesso à aplicação: **Vendedor (sales), Usuário (user), Administrador (admin) e Gestor (manager)**, permitindo controlar as permissões de acordo com o perfil de cada usuário.
 
-![Perfis de acesso do AU Food](imagens/perfis-acesso.png)
+![Perfis de acesso do AU Food](images/perfis-acesso.png)
 
 ## O que aprendi
 
