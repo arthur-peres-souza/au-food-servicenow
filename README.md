@@ -69,7 +69,9 @@ Essas permissões determinam quais usuários podem criar, visualizar, alterar ou
 
 ## Automação
 
-Também criei o Flow **Novo Pedido**, trabalhando com automação de processos dentro do ServiceNow a partir de eventos da aplicação.
+- Foi desenvolvido o fluxo **Novo Pedido** para automatizar o processo de aprovação dos pedidos. Quando um pedido é criado, o fluxo inicia uma solicitação de aprovação e verifica o resultado por meio de condições. 
+- Caso o pedido seja rejeitado, um e-mail é enviado automaticamente ao cliente informando a situação do pedido, e o fluxo é encerrado.
+- Caso seja aprovado, o registro do pedido é atualizado automaticamente antes do encerramento do fluxo.
 
 ## Ferramentas e recursos utilizados
 
