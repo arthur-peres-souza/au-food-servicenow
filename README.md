@@ -77,7 +77,7 @@ Essas permissões determinam quais usuários podem criar, visualizar, alterar ou
 
 - ServiceNow
 - App Engine Studio
-- Flow
+- Flow Designer
 - Tabelas e campos
 - Campos de referência
 - Controle de acesso por funções
@@ -90,15 +90,15 @@ Abaixo estão algumas telas da aplicação e das configurações desenvolvidas d
 
 ### Visão geral da aplicação
 
-A aplicação AU Food foi estruturada no ServiceNow App Engine Studio com as tabelas **Pedido**, **Estoque** e **Produto**.
+A aplicação AU FOOD foi estruturada no ServiceNow App Engine Studio com as tabelas **Pedido**, **Estoque** e **Produto**.
 
-![Visão geral da aplicação AU Food](images/visao-geral.png)
+![Visão geral da aplicação AU FOOD](images/visao-geral.png)
 
 ### Produtos cadastrados
 
 A tabela de produtos reúne informações como **nome, marca, categoria, subcategoria, status e disponibilidade**, permitindo organizar e gerenciar os produtos cadastrados na aplicação.
 
-![Produtos cadastrados no AU Food](images/produtos.png)
+![Produtos cadastrados no AU FOOD](images/produtos.png)
 
 ### Categorias e subcategorias dependentes
 
@@ -108,7 +108,7 @@ O campo **Subcategoria** foi configurado para apresentar opções de acordo com 
 
 ### Automação do processo de pedidos
 
-Foi desenvolvido o fluxo **Novo Pedido**, responsável por automatizar etapas do processo de pedidos, incluindo **solicitação de aprovação, condições para pedidos aprovados ou rejeitados, envio de e-mail, atualização do registro e encerramento do fluxo**.
+O fluxo **Novo Pedido** inicia o processo de aprovação quando um pedido é criado. Em caso de rejeição, um e-mail é enviado ao cliente e o fluxo é encerrado. Quando aprovado, o registro do pedido é atualizado automaticamente antes do encerramento.
 
 ![Fluxo automatizado de pedidos](images/fluxo-pedido.png)
 
@@ -116,7 +116,7 @@ Foi desenvolvido o fluxo **Novo Pedido**, responsável por automatizar etapas do
 
 Foram configuradas diferentes funções de acesso à aplicação: **Vendedor (sales), Usuário (user), Administrador (admin) e Gestor (manager)**, permitindo controlar as permissões de acordo com o perfil de cada usuário.
 
-![Perfis de acesso do AU Food](images/perfis-acesso.png)
+![Perfis de acesso do AU FOOD](images/perfis-acesso.png)
 
 ## O que aprendi
 
@@ -126,7 +126,7 @@ Atualmente estou no **2º semestre de Engenharia de Software**, e o desenvolvime
 
 Durante o projeto, trabalhei com estruturação e relacionamento de dados, tabelas, referências, diferentes níveis de acesso, personalização de interfaces e automação de processos.
 
-A experiência também me ajudou a entender melhor como esses conceitos podem ser utilizados na construção de uma aplicação dentro de uma plataforma corporativa como o ServiceNow.
+A experiência também me ajudou a compreender como esses conceitos se relacionam na construção de uma aplicação dentro de uma plataforma corporativa como o ServiceNow.
 
 ---
 
