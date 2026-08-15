@@ -38,7 +38,7 @@ A aplicação possui três tabelas principais:
 
 **Produto | Estoque | Pedido**
 
-Uma das coisas que trabalhei no projeto foi o uso de referências entre tabelas. Por exemplo, informações cadastradas em Produto podem ser utilizadas em Estoque sem a necessidade de cadastrar os mesmos dados novamente.
+Durante o projeto, utilizei referências entre tabelas para conectar informações e evitar a duplicação de dados. Por exemplo, informações cadastradas em Produto podem ser utilizadas em Estoque sem a necessidade de cadastrar os mesmos dados novamente.
 
 Também utilizei registros já existentes no ServiceNow, como empresas e marcas, como referência dentro da aplicação.
 
